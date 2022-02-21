@@ -47,3 +47,9 @@ module "ingress" {
 - Source: `git::https://github.com/camptocamp/devops-stack-module-traefik.git//aks`
 - Extra variables:
    - `azure_dns_label_name`
+
+
+### Scaleway
+
+- Description: Configure Traefik for Scaleway (Kapsule/Kosmos) using a NodePort setup.
+- Source: `git::https://github.com/camptocamp/devops-stack-module-traefik.git//scaleway`
