@@ -11,5 +11,7 @@ module "traefik" {
 
   app_autosync = var.app_autosync
 
+  app_skip_crds = var.app_skip_crds
+
   dependency_ids = var.dependency_ids
 }

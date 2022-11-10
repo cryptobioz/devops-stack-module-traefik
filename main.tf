@@ -55,6 +55,7 @@ resource "argocd_application" "this" {
       path            = "charts/traefik"
       target_revision = "main"
       helm {
+        skip_crds = var.app_skip_crds
         values = data.utils_deep_merge_yaml.values.output
       }
     }
