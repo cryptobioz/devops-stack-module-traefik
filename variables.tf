@@ -25,6 +25,11 @@ variable "helm_values" {
   default     = []
 }
 
+variable "app_autosync" {
+  type = bool
+  default = false
+}
+
 variable "dependency_ids" {
   type = map(string)
 
