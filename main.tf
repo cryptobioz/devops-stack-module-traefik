@@ -17,7 +17,7 @@ resource "argocd_project" "this" {
 
   spec {
     description  = "Traefik application project"
-    source_repos = ["https://github.com/camptocamp/devops-stack-module-traefik.git"]
+    source_repos = ["https://github.com/cryptobioz/devops-stack-module-traefik.git"]
 
     destination {
       name      = "in-cluster"
