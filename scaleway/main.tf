@@ -7,5 +7,9 @@ module "traefik" {
 
   namespace = var.namespace
 
+  app_autosync = var.app_autosync
+
+  app_skip_crds = var.app_skip_crds
+
   helm_values = concat(local.helm_values, var.helm_values)
 }
